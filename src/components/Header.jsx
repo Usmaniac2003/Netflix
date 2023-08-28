@@ -77,6 +77,7 @@ const Header = () => {
                 <TextField
                     onChange={(e) => setSearch(e.target.value)}
                     onKeyPress={handleEnterKeyPress}
+                    onBlur={handleSearch}
                     variant="outlined"
                     InputProps={{
                         startAdornment: (
