@@ -63,6 +63,12 @@ const Header = () => {
             navigate("/page3");
         }
     }
+
+    const handleEnterKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
     return <>
 
         <div className="navbar" >
@@ -70,6 +76,7 @@ const Header = () => {
             <div className="nav-item">
                 <TextField
                     onChange={(e) => setSearch(e.target.value)}
+                    onKeyPress={handleEnterKeyPress}
                     variant="outlined"
                     InputProps={{
                         startAdornment: (

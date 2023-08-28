@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import axios from 'axios';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import CloseIcon from '@mui/icons-material/Close';
-import StarIcon from '@mui/icons-material/Star';
 import { MyStates } from '../StateManage';
 
 
@@ -57,6 +56,7 @@ const MovieSlide = () => {
     const HoldTrailerKey = (key) => {
         setTrailerKey(key);
         setShowTrailer(true);
+        window.scrollTo(0, 0);
     }
 
 

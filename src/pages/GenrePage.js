@@ -126,7 +126,7 @@ function GenrePage() {
             </div>) : (
                 <>
                     <div className="error" style={{ display: "flex", flexDirection: "column", minHeight: "80vh", justifyContent: "center", alignItems: "center", gap: "8vh" }}>
-                        <Typography variant='h3' sx={{ color: "white" }}>Data Not Availaible</Typography>
+                        <Typography variant='h3' sx={{ color: "white" }}>Oops!! Something Might Be Wrong</Typography>
                         <Button variant="contained" sx={{
                             background: "#E50914", '&:hover': {
                                 backgroundColor: 'white',
