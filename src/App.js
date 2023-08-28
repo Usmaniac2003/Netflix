@@ -1,14 +1,18 @@
 import React from 'react';
-import axios from "axios";
-import { Button, Typography } from '@mui/material';
-import { MyStates } from './StateManage';
-import { Route, Routes, NavLink } from 'react-router-dom';
-
+import Homepage from './pages/Homepage';
+import Page2 from './pages/Page2';
+import SearchPage from './pages/SearchPage';
+import GenrePage from './pages/GenrePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
-  let { state } = MyStates();
   return (
     <>
-      <Typography className='mt-5'>Hello World {state}</Typography>
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/Page2" element={<Page2 />} />
+        <Route path="/Page3" element={<SearchPage />} />
+        <Route path="/Page4" element={<GenrePage />} />
+      </Routes>
     </>
   )
 }

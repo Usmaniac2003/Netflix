@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,135 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #121212;
+}
+
+.logo {
+  width: clamp(120px, 8vw, 400px);
+}
+
+.profile {
+  width: clamp(30px, 3vw, 500px);
+  border-radius: 8px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  /* Set your desired background color */
+  color: #fff;
+  /* Set your desired text color */
+  padding: 0.1rem;
+  /* Adjust padding as needed */
+  z-index: 1000;
+  /* Set a high z-index to ensure it's above other elements */
+}
+
+.nav-item {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffc107;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffc107;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  z-index: 1000;
+}
+
+.movie_poster {
+  padding: 0 1vw;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.movie_poster:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
